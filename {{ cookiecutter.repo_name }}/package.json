@@ -1,0 +1,28 @@
+{
+  "name": "{{ cookiecutter.repo_name }}",
+  "version": "0.0.0",
+  "description": "{{ cookiecutter.description }}",
+  "main": " ",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "bower": "^1.3.12",
+    "jshint": "^2.6.3"
+  },
+  "devDependencies": {
+  },
+  "scripts": {
+    "test": "fab test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.repo_name}}.git"
+  },
+  "author": "{{cookiecutter.author}}",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.repo_name}}/issues"
+  },
+  "homepage": "https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.repo_name}}"
+}

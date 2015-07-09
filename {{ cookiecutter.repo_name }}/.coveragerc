@@ -1,0 +1,20 @@
+[run]
+branch = False
+source = .
+omit =
+    .virtualenvs/*
+    {{cookiecutter.repo_name}}/settings.py
+    {{cookiecutter.repo_name}}/aws_settings.py
+    {{cookiecutter.repo_name}}/codeship_settings.py
+    {{cookiecutter.repo_name}}/wsgi.py
+    fabconfig.py
+    fabfile.py
+    core/*
+    */migrations/*
+    manage.py
+    .idea/*
+    fabenv.py
+    */features/*
+
+[report]
+fail_under=100

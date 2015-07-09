@@ -1,0 +1,11 @@
+{% extends "angular_base.html" %}
+
+{% block content %}
+    {% verbatim %}
+    <div ng-app="{{cookiecutter.app_name}}" class="top-level">
+        <div layout="column" ng-controller="GlobalController" layout-fill ng-cloak flex>
+
+        </div>
+    </div>
+    {% endverbatim %}
+{% endblock content %}

@@ -1,0 +1,15 @@
+{% load staticfiles %}
+{% load compress %}
+
+{% compress js %}
+    <script src="{% static "apps/{{cookiecutter.app_name}}/app.js" %}"></script>
+
+    <script src="{% static "apps/{{cookiecutter.app_name}}/config/csrf.js" %}"></script>
+    <script src="{% static "apps/{{cookiecutter.app_name}}/config/limiter.js" %}"></script>
+    <script src="{% static "apps/{{cookiecutter.app_name}}/config/routes.js" %}"></script>
+
+    <script src="{% static "apps/{{cookiecutter.app_name}}/controllers/globalController.js" %}"></script>
+    <script src="{% static "apps/{{cookiecutter.app_name}}/controllers/homeController.js" %}"></script>
+
+    <script src="{% static "apps/{{cookiecutter.app_name}}/services/embeddedService.js" %}"></script>
+{% endcompress %}
