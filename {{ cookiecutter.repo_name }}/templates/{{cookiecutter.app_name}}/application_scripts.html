@@ -1,15 +1,17 @@
-{% load staticfiles %}
+{%raw%}{% load staticfiles %}
 {% load compress %}
 
-{% compress js %}
-    <script src="{% static "apps/{{cookiecutter.app_name}}/app.js" %}"></script>
+{% compress js %}{%endraw%}
+    {%raw%}<script src="{% static "apps/{%endraw%}{{cookiecutter.app_name}}{%raw%}/app.js" %}"></script>{%endraw%}
 
-    <script src="{% static "apps/{{cookiecutter.app_name}}/config/csrf.js" %}"></script>
-    <script src="{% static "apps/{{cookiecutter.app_name}}/config/limiter.js" %}"></script>
-    <script src="{% static "apps/{{cookiecutter.app_name}}/config/routes.js" %}"></script>
+    {%raw%}<script src="{% static "apps/{%endraw%}{{cookiecutter.app_name}}{%raw%}/config/csrf.js" %}"></script>{%endraw%}
+    {%raw%}<script src="{% static "apps/{%endraw%}{{cookiecutter.app_name}}{%raw%}/config/limiter.js" %}"></script>{%endraw%}
+    {%raw%}<script src="{% static "apps/{%endraw%}{{cookiecutter.app_name}}{%raw%}/config/routes.js" %}"></script>{%endraw%}
 
-    <script src="{% static "apps/{{cookiecutter.app_name}}/controllers/globalController.js" %}"></script>
-    <script src="{% static "apps/{{cookiecutter.app_name}}/controllers/homeController.js" %}"></script>
+    {%raw%}<script src="{% static "apps/{%endraw%}{{cookiecutter.app_name}}{%raw%}/controllers/globalController.js" %}"></script>{%endraw%}
+    {%raw%}<script src="{% static "apps/{%endraw%}{{cookiecutter.app_name}}{%raw%}/controllers/homeController.js" %}"></script>{%endraw%}
 
-    <script src="{% static "apps/{{cookiecutter.app_name}}/services/embeddedService.js" %}"></script>
+    {%raw%}<script src="{% static "apps/{%endraw%}{{cookiecutter.app_name}}{%raw%}/services/embeddedService.js" %}"></script>{%endraw%}
+{%raw%}
 {% endcompress %}
+{%endraw%}
